@@ -4,7 +4,6 @@ def calculateGrade():
     # This first line is provided for you
 
     try:
-
         score = float(input("Enter score:"))
 
         if score > 1:
@@ -17,8 +16,11 @@ def calculateGrade():
             print ("C")
         elif score >= 0.6:
             print ("D")
-        elif score < 0.6:
+        elif score >= 0:
             print ("F")
+        else:   
+            print ("Bad Score")        
+        
     except: 
         print ("Bad Score")
 
